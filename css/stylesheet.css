@@ -1,0 +1,495 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+		.tala-home-icon-clippers { display: none; }
+	}
+}
+
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #A70001;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.box-top {
+    padding-top: 20px;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', "Helvetica Neue", "Arial", sans-serif;
+	font-weight: 300;
+	transition: .25s all;
+	background-color:transparent;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+	font-weight: 500;	
+}
+
+.navbar-custom .nav li a {
+	transition: .25s all;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #a70001;
+    background-color: transparent;
+	transition: .25s all;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        background: black;
+		box-shadow: 0 15px 15px -15px #000;
+    }
+}
+@media(max-width:768px) {
+	.navbar-custom {
+		background-color: rgba(0,0,0,.9);
+		box-shadow: 0 15px 15px -15px #000;
+	}
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+	padding: 44px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/tala1.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+	margin: 0 0 50px;
+    text-transform: uppercase;
+    font-family: 'Lato', "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 250px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 300;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	letter-spacing: 4px;
+	font-size: 16px;
+}
+.full-height {
+	height: 100%;
+}
+
+.btn-default {
+    border: 2px solid #a70001;
+    color: #fff;
+    background-color: transparent;
+    padding: 16px 50px;
+    border-radius: 4px;
+	font-size: 12px;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 2px solid #a70001;
+    outline: 0;
+    color: #fff;
+    background-color: #a70001;
+	font-size: 12px;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+	.btn-default {
+    border: 2px solid #a70001;
+    color: #fff;
+    background-color: transparent;
+    padding: 16px 50px;
+    border-radius: 4px;
+	font-size: 1.5vw;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 2px solid #a70001;
+    outline: 0;
+    color: #fff;
+    background-color: #a70001;
+	font-size: 1.5vw;
+	}
+	
+	.main-logo {
+	max-width: 85%;
+    padding-bottom: 40px;
+	}
+	.tala-home-icon {
+		padding-top: 10px;
+	}
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+	
+	.main-logo {
+	width: 85%;
+}
+	
+	.btn-default {
+    border: 2px solid #a70001;
+    color: #fff;
+    background-color: transparent;
+    padding: 16px 50px;
+    border-radius: 4px;
+	font-size: 2.2vw;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 2px solid #a70001;
+    outline: 0;
+    color: #fff;
+    background-color: #a70001;
+	font-size: 2.2vw;
+	}
+}
+
+footer {
+  min-height: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+/* The main logo stretches full width -- responsive */
+
+.main-logo {
+	max-width: 60%;
+    padding-top: 120px;
+}
+
+/* -- Home icon in top left of nav -- */
+.tala-home-icon {
+	 -webkit-transition: all 0.15s ease-in-out;
+     -moz-transition: all 0.15s ease-in-out;
+       -o-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+		padding-top: 14px;
+	    width: 68px;
+}
+.tala-home-icon-name {
+	 -webkit-transition: all 0.15s ease-in-out;
+     -moz-transition: all 0.15s ease-in-out;
+       -o-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+          transition: all 0.15s ease-in-out;
+		padding-top: 14px;
+}
+
+.tala-home-icon-name:hover {
+	-webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.pad-section {
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+/* Keyframe the intro to homepage, fade in */
+
+#home {
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
