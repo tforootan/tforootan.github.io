@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -65,7 +66,7 @@
                         <a class="page-scroll" href="content/gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#" onClick="alert('Coming Soon!')">Blog</a>
+                        <a class="page-scroll" href="#" onClick="swal('Coming Soon!')">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="content/contact.html">Contact</a>
@@ -83,7 +84,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <div class="brand-heading"><img class="main-logo" alt="Tala Forootan" src="img/TalaName.png"/>
+                        <div class="brand-heading">
+                            <img class="main-logo" alt="Tala Forootan" src="img/TalaName.png"/>
+                            <a>
+							    <span id="quoteButton" class="btn btn-default">Random Quotes</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,16 +104,43 @@
     
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="js/sweetalert.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="js/quotes.js"></script>
+    
+    <!-- Google Analytics -->
+    <script src="js/ga.js"></script>
+    
     
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-75014819-1', 'auto');
-      ga('send', 'pageview');
-    
+        $( document ).ready(function() {
+            function displayQuote(){
+                var quote = randomQuote();
+                var content = quote.split("\" -");
+
+                swal({   
+                    title: content[0]+"\"",   
+                    text: "- "+content[1],   
+                    showCancelButton: true,   
+                    confirmButtonColor: "#DD6B55",   
+                    confirmButtonText: "More",   
+                    closeOnConfirm: false }, 
+                    function(){   
+                        displayQuote(); 
+                        
+                    });
+            }
+            
+            $( "#quoteButton" ).click(function() {
+                displayQuote();
+                
+                
+            });
+            
+        });
     </script>
 
 </body>
